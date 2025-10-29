@@ -3,12 +3,14 @@
 name: Lint
 
 on: # yamllint disable-line rule:truthy
+  push:
+  pull_request:
 
-  push: null
+permissions: 
+contents: read
 
-  pull_request: null
+  pull_requests: write
 
-permissions: {}
 
 jobs:
 
